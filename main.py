@@ -35,13 +35,13 @@ st.sidebar.header('Model Parameters')
 
 risk_free_rate = st.sidebar.number_input(
     'Risk-Free Rate',
-    value=0.0443,
+    value=0.0100,
     format="%.4f"
 )
 
 dividend_yield = st.sidebar.number_input(
     'Dividend Yield',
-    value=0.0117,
+    value=0.0100,
     format="%.4f"
 )
 
