@@ -1,1 +1,3 @@
 # 3D-Implied-Volatility
+
+Built an interactive web application in Streamlit that visualizes the implied volatility surface for SPY call options in three dimensions. The app fetches real-time options data via the yfinance API, computes mid-market prices, and numerically inverts the Black-Scholes formula using Brent’s method to estimate implied volatilities. It supports user-defined filters on strike price range, interest rate, dividend yield, and volatility axis (strike vs. moneyness). A volatility surface is constructed by interpolating implied volatility values over a strike–time-to-expiration grid using scipy.interpolate.griddata, and rendered using a 3D Plotly surface plot. The tool offers an intuitive view into options pricing dynamics and volatility term structures.
